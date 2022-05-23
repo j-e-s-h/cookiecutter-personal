@@ -12,7 +12,7 @@ MESSAGE_COLOR = "\x1b[34m"
 RESET_ALL = "\x1b[0m"
 
 
-if not re.match(MODULE_REGEX, module_name):
+if not re.match(MODULE_REGEX, project_slug):
     print(f'{ERROR_COLOR}ERROR: %s is not a valid name.{RESET_ALL}')
 
     sys.exit(1)
