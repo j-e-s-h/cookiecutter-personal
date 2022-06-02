@@ -1,8 +1,10 @@
 {
-    "project_title": "Cookiecutter Personal",
-    "project_slug": "{{cookiecutter.project_title.lower().replace(' ', '_').replace('-', '_') }}",
-    "project_description": "Something cool",
+    "project_name": "Cookiecutter Personal",
+    "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_description": "Good day.",
+    "project_open_source_license": ["No license file", "MIT", "BSD-3-Clause"],
     "project_author_name": "J. E. Salgado-Hernández",
+    "project_author_email": "j_e_salgado@ciencias.unam.mx",
     "project_packages": ["All, Minimal"],
     "python_version": "3.7"
 }

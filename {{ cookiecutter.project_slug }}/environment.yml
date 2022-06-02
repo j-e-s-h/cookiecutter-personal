@@ -1,3 +1,5 @@
+# conda env create --file environment.yml
+
 name: {{ cookiecutter.project_slug }}
 channels:
   - anaconda
@@ -6,16 +8,25 @@ channels:
 dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - fs
+  {% endif -%}
+  - invoke
   - jupyter
   - jupyterlab
+  - matplotlib
+  - numpy=1.18.5
+  - pandas
+  {% if cookiecutter.project_packages == "All" -%}
   - pathlib
   {% endif -%}
   - pip
+  - plotly
   {% if cookiecutter.project_packages == "All" -%}
+  - pyhere
   - pyprojroot
   {% endif -%}
   - python={{ cookiecutter.python_version }}
+  - scipy
+  - seaborn
+  - sklearn 
   - pip:
-    {% if cookiecutter.project_packages == "All" -%}
-    - pyhere
-    {% endif -%}
+    - dcor

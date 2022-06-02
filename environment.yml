@@ -1,5 +1,8 @@
+# conda env create --file environment.yml
+
 name: cookiecutter-personal
 channels:
+  - anaconda
   - conda-forge
   - defaults
 dependencies:
