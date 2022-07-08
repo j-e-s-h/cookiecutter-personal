@@ -13,7 +13,7 @@ dependencies:
   - jupyter
   - jupyterlab
   - matplotlib
-  - numpy=1.18.5
+  - numpy
   - pandas
   {% if cookiecutter.project_packages == "All" -%}
   - pathlib
@@ -28,5 +28,3 @@ dependencies:
   - scipy
   - seaborn
   - sklearn 
-  - pip:
-    - dcor
