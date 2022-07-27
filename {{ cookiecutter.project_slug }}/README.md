@@ -15,7 +15,6 @@ By: {{ cookiecutter.project_author_name }}
     ├── environment.yml    <- The requirements file for reproducing the analysis environment.
     ├── setup.py           <- Makes project pip installable (pip install -e .)
     │                         so {{ cookiecutter.project_module_name }} can be imported.
-    ├── tasks.py           <- Invoke with commands like `notebook`.
     ├── README.md          <- The top-level README for developers using this project.
     ├── install.md         <- Detailed instructions to set up the virtual
     |                         environment of this project.
