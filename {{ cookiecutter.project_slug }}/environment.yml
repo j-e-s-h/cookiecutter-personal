@@ -8,7 +8,6 @@ channels:
 dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - fs
-  - invoke
   {% endif -%}
   - jupyter
   - jupyterlab
@@ -21,10 +20,13 @@ dependencies:
   - pip
   - plotly
   {% if cookiecutter.project_packages == "All" -%}
-  - pyhere
   - pyprojroot
   {% endif -%}
   - python={{ cookiecutter.python_version }}
   - scipy
   - seaborn
-  - sklearn 
+  - sklearn
+  - pip:
+    {% if cookiecutter.project_packages == "All" -%}
+    - pyhere
+    {% endif -%}
