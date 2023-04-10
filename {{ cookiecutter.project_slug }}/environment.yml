@@ -8,8 +8,8 @@ channels:
 dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - fs
-  {% endif -%}
   - invoke
+  {% endif -%}
   - jupyter
   - jupyterlab
   - matplotlib
