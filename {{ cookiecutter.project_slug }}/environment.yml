@@ -25,7 +25,7 @@ dependencies:
   - python={{ cookiecutter.python_version }}
   - scipy
   - seaborn
-  - sklearn
+  - scikit-learn
   - pip:
     {% if cookiecutter.project_packages == "All" -%}
     - pyhere
