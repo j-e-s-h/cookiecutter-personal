@@ -4,9 +4,10 @@ By: {{ cookiecutter.project_author_name }}
 
 {{ cookiecutter.project_description }}
 
-## License
 
-{{ cookiecutter.project_open_source_license }}
+## Requirements
+
+
 
 ## Project Organization
 
@@ -29,3 +30,8 @@ By: {{ cookiecutter.project_author_name }}
     |
     └── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
         └── figures        <- Generated graphics and figures to be used in reporting.
+
+
+## License
+
+{{ cookiecutter.project_open_source_license }}
